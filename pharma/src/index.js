@@ -1,5 +1,6 @@
-import React from "react";
 import ReactDOM from "react-dom";
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
 
 const Welcome = () => {
   console.log("display welcome message");
@@ -17,4 +18,5 @@ const App = () => {
     </>
   );
 };
+
 ReactDOM.render(<App />, document.getElementById("root"));
