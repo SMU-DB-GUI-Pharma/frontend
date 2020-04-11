@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Prescriptions from "./components/prescriptions";
+import NavBar from "./components/navbar";
 
 const Welcome = () => {
   console.log("display welcome message");
@@ -14,10 +15,13 @@ const Welcome = () => {
 
 const App = () => {
   return (
-    <>
-      <Welcome />
-    </>
+    <React.Fragment>
+      <NavBar />
+      <main className="container">
+        <Prescriptions />
+      </main>
+    </React.Fragment>
   );
 };
 
-ReactDOM.render(<Prescriptions />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
