@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import Prescriptions from "./components/prescriptions";
 
 const Welcome = () => {
   console.log("display welcome message");
@@ -19,4 +20,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Prescriptions />, document.getElementById("root"));
