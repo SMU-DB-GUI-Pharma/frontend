@@ -18,6 +18,8 @@ const App = () => {
     <React.Fragment>
       <NavBar />
       <main className="container">
+        <h1 className="m-3 text-primary">Prescriptions</h1>
+        <hr />
         <Prescriptions />
       </main>
     </React.Fragment>
