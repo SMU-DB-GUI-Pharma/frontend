@@ -2,11 +2,11 @@ import React, { Component } from "react";
 
 class Prescription extends Component {
   state = {
-    name: "Adderall",
-    date: "05-05-2020",
-    Rx: "90mg",
-    Address: "430 California Terrace",
-    Age: "18",
+    name: this.props.name,
+    date: this.props.date,
+    Rx: this.props.rx,
+    Address: this.props.address,
+    Age: this.props.age,
   };
 
   styles = {
